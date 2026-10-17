@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="minimal-light.css">
     <style>
       /* Display crop only; the original photograph is preserved. */
-      .image.avatar { width:144px; height:144px; overflow:hidden; margin:0 0 20px; vertical-align:middle; }
-      .image.avatar img { position:absolute; width:192px; max-width:none; height:auto; left:-36px; top:-86px; padding:0; border-radius:0; }
+      .image.avatar { display:block; position:relative; width:144px; height:144px; overflow:hidden; margin:0 auto 20px; border-radius:50%; }
+      .image.avatar img { display:block; position:static; width:100%; max-width:100%; height:100%; object-fit:cover; object-position:75% 85%; padding:0; margin:0; border-radius:50%; }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <span class="image avatar"><img src="avatar.jpg" alt="Zhan Gao" width="192" height="256"></span>
+        <span class="image avatar"><img src="avatar.jpg?v=2" alt="Zhan Gao" width="144" height="144" loading="eager" decoding="async"></span>
         <h1>Zhan Gao <span lang="zh-CN">高展</span></h1>
         <position style="font-size:1.10rem;">Ph.D. Student</position>
         <br>

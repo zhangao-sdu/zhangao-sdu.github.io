@@ -24,10 +24,10 @@
 
 直接修改 `index.html` 中对应的段落和列表。头像样式位于页面顶部，论文位置已用注释标出。
 
-更换头像时，替换 `avatar.jpg`；圆形取景样式在 `index.html` 的 `<style>` 中，可按新照片调整。当前头像结构为：
+更换头像时，替换 `avatar.jpg`；圆形取景样式在 `index.html` 的 `<style>` 中。头像使用固定 144px 圆框和 `object-fit: cover`，避免绝对定位在手机上的显示差异。通过 `object-position: 75% 85%` 调整取景：第二个百分比越小，露出的上方风景越多。更新图片后可递增图片地址的 `?v=2`，以刷新缓存。当前头像结构为：
 
 ```html
-<span class="image avatar"><img src="avatar.jpg" alt="Zhan Gao"></span>
+<span class="image avatar"><img src="avatar.jpg?v=2" alt="Zhan Gao" width="144" height="144" loading="eager" decoding="async"></span>
 ```
 
 照片可以只保留文件名，其他文件均使用相对路径，因此网站也能部署在项目子路径。
