@@ -12,13 +12,13 @@
 ## 个人资料
 
 - 姓名：Zhan Gao（高展）
-- 身份：山东大学软件学院人工智能博士一年级在读
-- 本科：山东大学软件学院
+- 身份：山东大学软件学院人工智能博士在读（2026.09 – Present）
+- 本科：山东大学软件学院（2022.09 – 2026.06）
 - 研究方向：Intelligent Networks；Networked Embodied Intelligence
 - 荣誉：山东大学荣誉学士学位；比亚迪奖学金（前 1%）
 - 邮箱：gaozhan@mail.sdu.edu.cn
 
-导师：Prof. Lu Bai；团队：Pervasive Connectivity and Networked Intelligence (PCNI)，链接使用用户提供的地址。未编造入学年份、毕业年份或论文信息。荣誉学位英文暂译为 Honors Bachelor's Degree；若证书有官方英文名称，应以证书为准。
+导师：Prof. Lu Bai；团队：Pervasive Connectivity and Networked Intelligence (PCNI)，链接使用用户提供的地址。教育日期由用户提供，未编造论文信息。荣誉学位英文暂译为 Honors Bachelor's Degree；若证书有官方英文名称，应以证书为准。
 
 ## 编辑
 
