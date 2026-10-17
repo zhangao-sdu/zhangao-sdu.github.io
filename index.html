@@ -13,13 +13,28 @@
       /* Display crop only; the original photograph is preserved. */
       .image.avatar { display:block; position:relative; width:144px; height:144px; overflow:hidden; margin:0 auto 20px; border-radius:50%; }
       .image.avatar img { display:block; position:static; width:100%; max-width:100%; height:100%; object-fit:cover; object-position:75% 85%; padding:0; margin:0; border-radius:50%; }
+      /* Eight-second loop: three-second hold, one-second crossfade per name. */
+      .name-cycle { display:grid; }
+      .name-cycle > span { grid-area:1 / 1; }
+      .name-en { animation:name-english 8s ease-in-out infinite; }
+      .name-zh { opacity:0; animation:name-chinese 8s ease-in-out infinite; }
+      @keyframes name-english { 0%,37.5%,100% { opacity:1; } 50%,87.5% { opacity:0; } }
+      @keyframes name-chinese { 0%,37.5%,100% { opacity:0; } 50%,87.5% { opacity:1; } }
+      @media (prefers-reduced-motion:reduce) {
+        .name-cycle { display:block; }
+        .name-cycle > span { animation:none; opacity:1; }
+        .name-zh::before { content:" "; }
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <span class="image avatar"><img src="avatar.jpg?v=2" alt="Zhan Gao" width="144" height="144" loading="eager" decoding="async"></span>
-        <h1>Zhan Gao <span lang="zh-CN">高展</span></h1>
+        <h1 class="name-cycle" aria-label="Zhan Gao · 高展">
+          <span class="name-en" aria-hidden="true">Zhan Gao</span>
+          <span class="name-zh" lang="zh-CN" aria-hidden="true">高展</span>
+        </h1>
         <position style="font-size:1.10rem;">Ph.D. Student</position>
         <br>
         Artificial Intelligence
